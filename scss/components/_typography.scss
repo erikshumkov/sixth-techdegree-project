@@ -1,0 +1,25 @@
+/*===========================================
+// Typography
+//==========================================*/
+
+.intro {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-weight: lighter;
+  margin-left: 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.caption {
+  font-family: 'News Cycle', sans-serif;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}

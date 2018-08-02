@@ -1,0 +1,42 @@
+/*===========================================
+// Navigation
+//==========================================*/
+
+.video__container--presentation {
+    background: #000;
+    padding: 10px 0 1px 0;
+    @include medque("small") {
+      width: 90%;
+      margin: 30px auto 0 auto;
+    }
+    @include medque("medium") {
+      @include flexify($just: flex-start);
+      margin: 30px auto 0 auto;
+      width: 80%;
+    }
+}
+
+.video__container {
+  margin-left: 0;
+  @include medque("small") {
+    width: 90%;
+    margin: auto;
+  }
+  @include medque("medium") {
+    @include flexify($just: center);
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+}
+
+.video__container--controls {
+  background: #000;
+  padding: 1px 0 25px 0;
+  @include medque("small") {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include medque("medium") {
+    width: 80%;
+  }
+}

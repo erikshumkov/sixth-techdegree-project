@@ -1,0 +1,30 @@
+/*===========================================
+// Base
+//==========================================*/
+
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+video {
+  @include medque("medium") {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+p {
+  font-family: 'News Cycle', sans-serif;
+  text-align: left;
+  line-height: 25px;
+  width: 90%;
+  margin: 30px auto;
+  @include medque("medium") {
+    width: 80%;
+    line-height: 30px;
+  }
+}
