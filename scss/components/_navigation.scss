@@ -22,7 +22,7 @@
   &--presentation {
 
     //styling above the video
-    background: #000;
+    background: $black;
     padding: 10px 0 1px 0;
     @include medque("small") {
       width: $w-small;
@@ -46,7 +46,7 @@
     //styling below video controls
     width: $w-full;
     max-width: $w-max;
-    background: #000;
+    background: $black;
     padding: 1px 0 25px 0;
     @include medque("small") {
       width: $w-small;

@@ -3,6 +3,7 @@
 //==========================================*/
 
 // Colors
+$black      : #000;
 
 // Media query widths
 $mq-xsmall  : 1px;
@@ -16,10 +17,10 @@ $stack-sans-serif: sans-serif;
 $stack-fjalla-one: 'Fjalla One', $stack-sans-serif;
 $stack-news-cycle: 'News Cycle', $stack-sans-serif;
 
-//  Widths
-$w-max      : 1000px;
+//  Widths, set widths for particular media query
+$w-max      : 850px; // max-width
 $w-full     : 100%;
 $w-small    : 90%;
 $w-medium   : 80%;
 $w-large    : 70%;
-$w-xlarge   : 60%;
+$w-xlarge   : 50%;
