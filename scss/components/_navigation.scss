@@ -2,41 +2,64 @@
 // Navigation
 //==========================================*/
 
-.video__container--presentation {
+.video__container {
+  @include flexify($just: center);
+  width: $w-full;
+  max-width: $w-max;
+  margin: 0 auto;
+    @include medque("small") {
+      width: $w-small;
+    }
+    @include medque("medium") {
+      width: $w-medium;
+    }
+    @include medque("large") {
+      width: $w-large;
+    }
+    @include medque("xlarge") {
+      width: $w-xlarge;
+    }
+  &--presentation {
+
+    //styling above the video
     background: #000;
     padding: 10px 0 1px 0;
     @include medque("small") {
-      width: 90%;
+      width: $w-small;
+      max-width: $w-max;
       margin: 30px auto 0 auto;
     }
     @include medque("medium") {
       @include flexify($just: flex-start);
-      margin: 30px auto 0 auto;
-      width: 80%;
+      width: $w-medium;
     }
-}
+    @include medque("large") {
+      width: $w-large;
+      margin-top: 10px;
+    }
+    @include medque("xlarge") {
+      width: $w-xlarge;
+    }
+  }
+  &--controls {
 
-.video__container {
-  margin-left: 0;
-  @include medque("small") {
-    width: 90%;
-    margin: auto;
-  }
-  @include medque("medium") {
-    @include flexify($just: center);
-    margin: 0 auto 0 auto;
-    width: 80%;
-  }
-}
-
-.video__container--controls {
-  background: #000;
-  padding: 1px 0 25px 0;
-  @include medque("small") {
-    width: 90%;
-    margin: 0 auto;
-  }
-  @include medque("medium") {
-    width: 80%;
+    //styling below video controls
+    width: $w-full;
+    max-width: $w-max;
+    background: #000;
+    padding: 1px 0 25px 0;
+    @include medque("small") {
+      width: $w-small;
+      margin: 0 auto;
+    }
+    @include medque("medium") {
+      width: $w-medium;
+    }
+    @include medque("large") {
+      width: $w-large;
+    }
+    @include medque("xlarge") {
+      width: $w-xlarge;
+    }
   }
 }

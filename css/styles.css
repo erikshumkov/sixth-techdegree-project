@@ -323,24 +323,23 @@ template {
 * {
   font-family: sans-serif; }
 
-h1 {
-  text-align: center; }
-
-@media (min-width: 768px) {
-  video {
-    max-width: 100%;
-    max-height: 100%; } }
-
 p {
-  font-family: 'News Cycle', sans-serif;
+  width: 90%;
+  max-width: 1000px;
+  font-family: "News Cycle", sans-serif;
   text-align: left;
   line-height: 25px;
-  width: 90%;
   margin: 30px auto; }
   @media (min-width: 768px) {
     p {
       width: 80%;
       line-height: 30px; } }
+  @media (min-width: 1024px) {
+    p {
+      width: 70%; } }
+  @media (min-width: 1400px) {
+    p {
+      width: 60%; } }
 
 /*===========================================
 // Component partials
@@ -348,57 +347,76 @@ p {
 /*===========================================
 // Navigation
 //==========================================*/
-.video__container--presentation {
-  background: #000;
-  padding: 10px 0 1px 0; }
-  @media (min-width: 490px) {
-    .video__container--presentation {
-      width: 90%;
-      margin: 30px auto 0 auto; } }
-  @media (min-width: 768px) {
-    .video__container--presentation {
-      display: flex;
-      justify-content: flex-start;
-      margin: 30px auto 0 auto;
-      width: 80%; } }
-
 .video__container {
-  margin-left: 0; }
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
   @media (min-width: 490px) {
     .video__container {
-      width: 90%;
-      margin: auto; } }
+      width: 90%; } }
   @media (min-width: 768px) {
     .video__container {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto 0 auto;
       width: 80%; } }
-
-.video__container--controls {
-  background: #000;
-  padding: 1px 0 25px 0; }
-  @media (min-width: 490px) {
-    .video__container--controls {
-      width: 90%;
-      margin: 0 auto; } }
-  @media (min-width: 768px) {
-    .video__container--controls {
-      width: 80%; } }
+  @media (min-width: 1024px) {
+    .video__container {
+      width: 70%; } }
+  @media (min-width: 1400px) {
+    .video__container {
+      width: 60%; } }
+  .video__container--presentation {
+    background: #000;
+    padding: 10px 0 1px 0; }
+    @media (min-width: 490px) {
+      .video__container--presentation {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto 0 auto; } }
+    @media (min-width: 768px) {
+      .video__container--presentation {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .video__container--presentation {
+        width: 70%;
+        margin-top: 10px; } }
+    @media (min-width: 1400px) {
+      .video__container--presentation {
+        width: 60%; } }
+  .video__container--controls {
+    width: 100%;
+    max-width: 1000px;
+    background: #000;
+    padding: 1px 0 25px 0; }
+    @media (min-width: 490px) {
+      .video__container--controls {
+        width: 90%;
+        margin: 0 auto; } }
+    @media (min-width: 768px) {
+      .video__container--controls {
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .video__container--controls {
+        width: 70%; } }
+    @media (min-width: 1400px) {
+      .video__container--controls {
+        width: 60%; } }
 
 /*===========================================
 // Typography
 //==========================================*/
 .intro {
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
   font-weight: lighter;
   margin-left: 15px;
   font-size: 13px;
   letter-spacing: 2px; }
 
 .caption {
-  font-family: 'News Cycle', sans-serif; }
+  font-family: "News Cycle", sans-serif; }
   .caption:hover {
     cursor: pointer; }
 

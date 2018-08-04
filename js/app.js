@@ -8,9 +8,11 @@ $("video").mediaelementplayer({
   features: ["playpause", "fullscreen", "progress", "duration", "volume"],
   alwaysShowControls: true,
   startVolume: 0.7,
-  videoVolume: "horizontal",
-  stretching: "responsive"
+  videoVolume: "horizontal"
 });
+
+
+
 
 // Event listens for the time update on the video, highlights text depending on the time
 // of the clip.
@@ -20,7 +22,7 @@ video.ontimeupdate = function() {
 
     // If current time is greater than data-start and lesser than data-end
     // show specific span text in orange.
-    if (  video.currentTime > span[i].getAttribute("data-start")
+    if ( video.currentTime > span[i].getAttribute("data-start")
           && video.currentTime < span[i].getAttribute("data-end") ) {
       span[i].style.backgroundColor = "#000";
       span[i].style.color = "#fff";
@@ -37,7 +39,7 @@ video.ontimeupdate = function() {
 videoText.addEventListener("click", (event) => {
 
 // If span is clicked, video will jump to that sentence in video.
-  if(event.target.tagName == "SPAN") {
+  if( event.target.tagName == "SPAN" ) {
     video.currentTime = event.target.getAttribute("data-start");
   }
 });

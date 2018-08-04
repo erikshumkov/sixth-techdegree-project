@@ -4,11 +4,22 @@
 
 // Colors
 
-$color-highlight: #ffad7b; // Orange
-
 // Media query widths
-$mq-xsmall:   1px;
-$mq-small:    490px;
-$mq-medium:   768px;
-$mq-large:    1100px;
-$mq-xlarge:   1400px;
+$mq-xsmall  : 1px;
+$mq-small   : 490px;
+$mq-medium  : 768px;
+$mq-large   : 1024px;
+$mq-xlarge  : 1400px;
+
+// Font Stack
+$stack-sans-serif: sans-serif;
+$stack-fjalla-one: 'Fjalla One', $stack-sans-serif;
+$stack-news-cycle: 'News Cycle', $stack-sans-serif;
+
+//  Widths
+$w-max      : 1000px;
+$w-full     : 100%;
+$w-small    : 90%;
+$w-medium   : 80%;
+$w-large    : 70%;
+$w-xlarge   : 60%;
