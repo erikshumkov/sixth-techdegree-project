@@ -11,9 +11,6 @@ $("video").mediaelementplayer({
   videoVolume: "horizontal"
 });
 
-
-
-
 // Event listens for the time update on the video, highlights text depending on the time
 // of the clip.
 video.ontimeupdate = function() {
@@ -22,8 +19,7 @@ video.ontimeupdate = function() {
 
     // If current time is greater than data-start and lesser than data-end
     // show specific span text in orange.
-    if ( video.currentTime > span[i].getAttribute("data-start")
-          && video.currentTime < span[i].getAttribute("data-end") ) {
+    if ( video.currentTime > span[i].getAttribute("data-start") && video.currentTime < span[i].getAttribute("data-end") ) {
       span[i].style.backgroundColor = "#000";
       span[i].style.color = "#fff";
     }
