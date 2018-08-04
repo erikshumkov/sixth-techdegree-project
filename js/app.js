@@ -7,6 +7,7 @@ const videoText = document.querySelector(".videoText");
 $("video").mediaelementplayer({
   features: ["playpause", "fullscreen", "progress", "duration", "volume"],
   alwaysShowControls: true,
+  enableKeyboard: false,
   startVolume: 0.7,
   videoVolume: "horizontal"
 });
